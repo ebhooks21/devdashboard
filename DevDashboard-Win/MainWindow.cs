@@ -20,6 +20,13 @@ public partial class MainWindow : Form {
 	 * Method that is called when the MainWindow is loaded.
 	 */
 	private void MainWindow_Load(object sender, EventArgs e) {
+		DisplayWelcomeMsg();	
+	}
+
+	/**
+	 * Method to build and display the welcome message.
+	 */
+	 private void DisplayWelcomeMsg() {
 		//Get the current time
 		DateTime dateTime = DateTime.Now;
 		string welcomeMsg = string.Empty;
@@ -37,5 +44,5 @@ public partial class MainWindow : Form {
 		}
 
 		WelcomeMsgArea.Text = welcomeMsg + "Eric Hooks.";
-	}
+	 }
 }
