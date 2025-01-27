@@ -18,7 +18,7 @@ public class UserConfigurationController {
 	 * Main constructor for the UserConfigurationController class.
 	 */
 	public UserConfigurationController() {
-		configFileFolder = Environment.SpecialFolder.UserProfile + "/DevDashboard";
+		configFileFolder = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) + "/DevDashboard";
 		configFileName = configFileFolder + "/config.json";
 	}
 

@@ -1,4 +1,7 @@
-﻿/**
+﻿
+using DevDashboard.controllers.Controllers;
+
+/**
  * InitialConfiguration.cs -- File to hold the controls for the InitialConfiguration window.
  * @author Eric Hooks, 2025
  */
@@ -30,6 +33,10 @@ public partial class InitialConfiguration : Form {
 			//Generate the configuration and save it
 			UserConfiguration uc = new UserConfiguration();
 			uc.UserName = name;
+
+			//Save the data to the configuration file
+			UserConfigurationController ucc = new UserConfigurationController();
+			ucc.SaveUserConfigurationFile(uc);
 
 			Hide();
 			MainWindow mw = new MainWindow(uc);

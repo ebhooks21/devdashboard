@@ -15,6 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\DevDashboard.controllers\DevDashboard.controllers.csproj" />
     <ProjectReference Include="..\DevDashboard.models\DevDashboard.models.csproj" />
   </ItemGroup>
 

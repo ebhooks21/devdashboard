@@ -74,7 +74,7 @@
 			// 
 			// SaveButton
 			// 
-			SaveButton.Location = new Point(418, 169);
+			SaveButton.Location = new Point(443, 169);
 			SaveButton.Name = "SaveButton";
 			SaveButton.Size = new Size(75, 23);
 			SaveButton.TabIndex = 4;
