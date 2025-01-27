@@ -14,4 +14,8 @@
     <Content Include="devdashboardlogo.ico" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\DevDashboard.models\DevDashboard.models.csproj" />
+  </ItemGroup>
+
 </Project>

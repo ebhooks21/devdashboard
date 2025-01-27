@@ -8,11 +8,14 @@ namespace DevDashboard_Win;
  * MainWindow class.
  */
 public partial class MainWindow : Form {
+	//Variable for the user configuration
+	private UserConfiguration userConfig;
 
 	/**
 	 * Main constructor for the MainWindow.
 	 */
-	public MainWindow() {
+	public MainWindow(UserConfiguration uc) {
+		userConfig = uc;
 		InitializeComponent();
 	}
 
@@ -43,6 +46,6 @@ public partial class MainWindow : Form {
 			welcomeMsg = "Good Evening, ";
 		}
 
-		WelcomeMsgArea.Text = welcomeMsg + "Eric Hooks.";
+		WelcomeMsgArea.Text = welcomeMsg + userConfig.UserName + ".";
 	 }
 }
