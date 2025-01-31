@@ -5,3 +5,5 @@
 using DevDashboard.console.Controllers;
 
 MenuController mc = new MenuController();
+
+mc.Start();

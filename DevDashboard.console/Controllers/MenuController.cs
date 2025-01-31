@@ -24,10 +24,16 @@ namespace DevDashboard.console.Controllers;
      */
 	 public MenuController() {
         IsRunning = true;
-		State = MenuState.MainMenu;
 
 		//Create a new UserInputController
-		uic = new UserInputController();
+		uic = new UserInputController();	
+	 }
+
+	 /**
+	 * Method to start the menu.
+	 */
+	 public void Start() {
+		State = MenuState.MainMenu;
 
 		//Display the main menu
 		while(IsRunning) {
