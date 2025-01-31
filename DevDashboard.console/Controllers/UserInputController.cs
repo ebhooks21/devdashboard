@@ -24,6 +24,7 @@ public class UserInputController {
 	public void ProcessUserInput(MenuController mc) {
 		string userInput = string.Empty;
 
+		Console.Write("Menu Option: ");
 		userInput = Console.ReadLine();
 
 		if((userInput != null) && (userInput != "") && (userInput.Length > 0)) {
@@ -38,6 +39,12 @@ public class UserInputController {
 			}
 		}
 
+		else {
+			Console.WriteLine("\n");
+            Console.WriteLine("An input is required.");
+			Console.WriteLine("\n");
+		}
+
 		return;
 	}
 
@@ -46,14 +53,15 @@ public class UserInputController {
 	*/
 	public void ProcessMainMenuInput(string userInput, MenuController mc) {
 		switch(userInput) {
-            
             case "3":
                 //Exit the application
                 mc.IsRunning = false;
                 break;
 
             default:
+				Console.WriteLine("\n");
                 Console.WriteLine("Invalid option. Please try again.");
+				Console.WriteLine("\n");
                 break;
         }
 

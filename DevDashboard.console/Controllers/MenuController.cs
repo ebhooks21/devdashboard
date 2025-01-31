@@ -42,7 +42,7 @@ namespace DevDashboard.console.Controllers;
      public void DisplayMainMenu() {
 		State = MenuState.MainMenu;
 
-        Console.Clear();
+        //Console.Clear();
         Console.WriteLine("Developer's Dashboard");
         Console.WriteLine("Main Menu:");
         //Console.WriteLine("1. Open Project");
