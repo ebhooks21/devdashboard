@@ -53,6 +53,9 @@ public class UserInputController {
 	*/
 	public void ProcessMainMenuInput(string userInput, MenuController mc) {
 		switch(userInput) {
+			case "1":
+			    //Web development menu
+
             case "3":
                 //Exit the application
                 mc.IsRunning = false;

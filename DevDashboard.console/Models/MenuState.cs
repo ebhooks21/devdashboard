@@ -8,5 +8,6 @@ namespace DevDashboard.console.Models;
 * Enum for the menu state.
 */
 public enum MenuState {
-	MainMenu
+	MainMenu,
+	WebDevelopmentMenu
 }
