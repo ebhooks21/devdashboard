@@ -49,4 +49,25 @@ namespace DevDashboard.console.Controllers;
         //Console.WriteLine("2. Save Configuration");
         Console.WriteLine("3. Exit");
 	 }
+
+	 /**
+	 * Method to display the web development menu.
+     */
+     public void DisplayWebDevelopmentMenu() {
+		//Check to make sure we got here correctly
+		if(State == MenuState.WebDevelopmentMenu) {
+           //Clear the console and show the new menu
+		   Console.Clear();
+           Console.WriteLine("Web Development Menu:");
+           //Console.WriteLine("1. Create New Project");
+           //Console.WriteLine("2. Open Existing Project");
+           Console.WriteLine("3. Back to Main Menu"); 
+
+		   uic.ProcessUserInput(this);
+        }
+
+		else {
+			return;
+		}
+	 }
  }

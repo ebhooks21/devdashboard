@@ -34,6 +34,10 @@ public class UserInputController {
 					ProcessMainMenuInput(userInput, mc);
 				    break;
 
+				case MenuState.WebDevelopmentMenu:
+					ProcessWebDevelopmentMenuInput(userInput, mc);
+					break;
+
 				default:
 					break;
 			}
@@ -55,6 +59,9 @@ public class UserInputController {
 		switch(userInput) {
 			case "1":
 			    //Web development menu
+				mc.State = MenuState.WebDevelopmentMenu;
+				mc.DisplayWebDevelopmentMenu();
+				break;
 
             case "3":
                 //Exit the application
@@ -67,6 +74,21 @@ public class UserInputController {
 				Console.WriteLine("\n");
                 break;
         }
+
+		return;
+	}
+
+	/**
+	* Method to process Web Development Menu Input.
+	*/
+	public void ProcessWebDevelopmentMenuInput(string userInput, MenuController mc) {
+		switch(userInput) {
+			case "3":
+			    //Back to Main Menu
+				mc.State = MenuState.MainMenu;
+				Console.Clear();
+                break;
+		}
 
 		return;
 	}
