@@ -45,7 +45,7 @@ namespace DevDashboard.console.Controllers;
         //Console.Clear();
         Console.WriteLine("Developer's Dashboard");
         Console.WriteLine("Main Menu:");
-        //Console.WriteLine("1. Open Project");
+        Console.WriteLine("1. Web Development");
         //Console.WriteLine("2. Save Configuration");
         Console.WriteLine("3. Exit");
 	 }
