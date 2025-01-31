@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevDashboard.models", "DevD
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevDashboard.controllers", "DevDashboard.controllers\DevDashboard.controllers.csproj", "{BFF2334A-7CC3-4DAB-93A0-4D749213020D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevDashboard.console", "DevDashboard.console\DevDashboard.console.csproj", "{90331B21-20D9-4A97-8A95-C1079D7BEACC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{BFF2334A-7CC3-4DAB-93A0-4D749213020D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BFF2334A-7CC3-4DAB-93A0-4D749213020D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BFF2334A-7CC3-4DAB-93A0-4D749213020D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90331B21-20D9-4A97-8A95-C1079D7BEACC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90331B21-20D9-4A97-8A95-C1079D7BEACC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90331B21-20D9-4A97-8A95-C1079D7BEACC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90331B21-20D9-4A97-8A95-C1079D7BEACC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
