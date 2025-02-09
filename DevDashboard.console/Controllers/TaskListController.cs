@@ -56,4 +56,30 @@ public class TaskListController {
 
 		return status;
 	}
+
+	/**
+	* Method to display the task list.
+	*/
+	public void DisplayTaskList(ConfigurationController cc) {
+		//Load the task list from the data file
+		if(LoadTaskListFromFile(cc)) {
+			//Display the task list
+			Console.WriteLine("ID | Task Name");
+
+			if(Tasks.Tasks.Count > 0) {
+				foreach(TaskEntity te in Tasks.Tasks) {
+					Console.WriteLine(te.Id + " | " + te.Name);
+				}
+			}
+
+			else {
+				Console.WriteLine("There are currently no tasks, add some!");
+			}
+		}
+
+		else {
+			Console.WriteLine("The Task List could not be read from the data file. Check the file and try again.");
+			Environment.Exit(1);
+		}
+	}
 }

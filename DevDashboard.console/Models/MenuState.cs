@@ -10,5 +10,6 @@ namespace DevDashboard.console.Models;
 public enum MenuState {
 	MainMenu,
 	WebDevelopmentMenu,
-	TaskListMenu
+	TaskListMenu,
+	TaskListMenuAddTask
 }

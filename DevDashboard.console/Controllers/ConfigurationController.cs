@@ -37,7 +37,8 @@ public class ConfigurationController {
 
 			//Check to see if the TasksList file exists, create it if false
 			if(!File.Exists(TaskListFile)) {
-				File.Create(TaskListFile);
+				TaskList tl = new TaskList();
+				File.WriteAllText(TaskListFile, JsonSerializer.Serialize(tl));
 			}
 		}
 

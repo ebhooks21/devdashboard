@@ -38,6 +38,10 @@ public class UserInputController {
 					ProcessWebDevelopmentMenuInput(userInput, mc);
 					break;
 
+				case MenuState.TaskListMenu:
+					ProcessTaskListMenuInput(userInput, mc);
+					break;
+
 				default:
 					break;
 			}
@@ -95,6 +99,38 @@ public class UserInputController {
 				Console.Clear();
                 break;
 		}
+
+		return;
+	}
+
+	/**
+	* Method to process Task List Menu Input.
+	*/
+	public void ProcessTaskListMenuInput(string userInput, MenuController mc) {
+		switch(userInput) {
+			case "1":
+			    //Display task list
+				mc.State = MenuState.TaskListMenu;
+				mc.DisplayTaskListMenu();
+				break;
+
+			case "2":
+				//Add task
+				mc.State = MenuState.TaskListMenuAddTask;
+				mc.GetTaskListController().DisplayAddTaskControl();
+				break;
+
+            case "5":
+				mc.State = MenuState.MainMenu;
+				Console.Clear();
+                break;
+
+            default:
+				Console.WriteLine("\n");
+                Console.WriteLine("Invalid option. Please try again.");
+				Console.WriteLine("\n");
+                break;
+        }
 
 		return;
 	}
