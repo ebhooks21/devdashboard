@@ -58,6 +58,34 @@ public class TaskListController {
 	}
 
 	/**
+	 * Method to display the task list menu.
+	 */
+	 public void DisplayTaskListMenu(MenuController mc) {
+		//Check to see if we got here correctly
+		if(mc.State == MenuState.TaskListMenu) {
+			Console.Clear();
+			Console.WriteLine("Task List Menu:");
+
+			//Display the task list
+			DisplayTaskList(mc.CC);	
+			
+			Console.WriteLine("");
+			Console.WriteLine("Actions:");
+			Console.WriteLine("1. Display Task List");
+			Console.WriteLine("2. Add Task");
+			Console.WriteLine("3. Mark Task Completed");
+			Console.WriteLine("4. Delete Task");
+			Console.WriteLine("5. Back to Main Menu");
+
+			mc.GetUserInputController().ProcessUserInput(mc);
+		}
+
+		else {
+			return;
+		}
+	 }
+
+	/**
 	* Method to display the task list.
 	*/
 	public void DisplayTaskList(ConfigurationController cc) {

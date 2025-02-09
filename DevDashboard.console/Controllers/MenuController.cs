@@ -86,40 +86,19 @@ namespace DevDashboard.console.Controllers;
 		else {
 			return;
 		}
-	 }
-
-	 /**
-	 * Method to display the task list menu.
-	 */
-	 public void DisplayTaskListMenu() {
-		//Check to see if we got here correctly
-		if(State == MenuState.TaskListMenu) {
-			Console.Clear();
-			Console.WriteLine("Task List Menu:");
-
-			//Display the task list
-			tlc.DisplayTaskList(CC);	
-			
-			Console.WriteLine("");
-			Console.WriteLine("Actions:");
-			Console.WriteLine("1. Display Task List");
-			Console.WriteLine("2. Add Task");
-			Console.WriteLine("3. Mark Task Completed");
-			Console.WriteLine("4. Delete Task");
-			Console.WriteLine("5. Back to Main Menu");
-
-			uic.ProcessUserInput(this);
-		}
-
-		else {
-			return;
-		}
-	 }
+	 } 
 
 	 /**
 	 * Method to get the TaskListController.
 	 */
 	 public TaskListController GetTaskListController() {
 		return tlc;
+	 }
+
+	 /**
+	 * Method to get the UserInputController.
+	 */
+	 public UserInputController GetUserInputController() {
+		return uic;
 	 }
  }
