@@ -8,4 +8,8 @@
     <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="../DevDashboard.models/DevDashboard.models.csproj" />
+  </ItemGroup>
+
 </Project>
