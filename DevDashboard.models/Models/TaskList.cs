@@ -40,7 +40,7 @@ public class TaskList {
 			}
 		}
 
-		return nextId++;
+		return ++nextId;
 	}
 
 	/**

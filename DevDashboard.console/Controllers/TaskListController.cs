@@ -82,4 +82,26 @@ public class TaskListController {
 			Environment.Exit(1);
 		}
 	}
+
+	/**
+	* Method to display the Add Task control.
+	*/
+	public void DisplayAddTaskControl(MenuController mc) {
+		string newTaskName = string.Empty;
+		TaskEntity newTask = null;
+
+		while(mc.State == MenuState.TaskListMenuAddTask) {
+			Console.Write("Enter The New Task Name: ");
+			newTaskName = Console.ReadLine();
+
+			if((newTaskName != string.Empty) && (newTaskName != null)) {
+				newTask = new TaskEntity(Tasks.GetNextTaskId(), newTaskName);
+				Tasks.Add(newTask);
+				mc.State = MenuState.TaskListMenu;
+				SaveTaskListToFile(mc.CC);
+			}
+		}
+
+		return;
+	}
 }

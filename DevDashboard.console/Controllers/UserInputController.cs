@@ -117,7 +117,8 @@ public class UserInputController {
 			case "2":
 				//Add task
 				mc.State = MenuState.TaskListMenuAddTask;
-				mc.GetTaskListController().DisplayAddTaskControl();
+				mc.GetTaskListController().DisplayAddTaskControl(mc);
+				mc.DisplayTaskListMenu();
 				break;
 
             case "5":
