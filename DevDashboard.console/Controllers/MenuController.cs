@@ -16,13 +16,17 @@ namespace DevDashboard.console.Controllers;
 	//Property for the menu state
 	public MenuState State { get; set; }
 
+	//Property for the ConfigurationController
+	public ConfigurationController CC { get; set; }
+
 	//Variable for the user input processor
 	private UserInputController uic;
 
 	/**
      * Main constructor for the MenuController class.
      */
-	 public MenuController() {
+	 public MenuController(ConfigurationController cc) {
+		CC = cc;
         IsRunning = true;
 
 		//Create a new UserInputController
@@ -76,5 +80,12 @@ namespace DevDashboard.console.Controllers;
 		else {
 			return;
 		}
+	 }
+
+	 /**
+	 * Method to display the task list menu.
+	 */
+	 public void DisplayTaskListMenu() {
+
 	 }
  }

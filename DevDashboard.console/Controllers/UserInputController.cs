@@ -63,6 +63,8 @@ public class UserInputController {
 				mc.DisplayWebDevelopmentMenu();
 				break;
 
+			
+
             case "3":
                 //Exit the application
                 mc.IsRunning = false;
