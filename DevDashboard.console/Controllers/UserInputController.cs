@@ -63,7 +63,11 @@ public class UserInputController {
 				mc.DisplayWebDevelopmentMenu();
 				break;
 
-			
+			case "2":
+				//Task List Menu
+				mc.State = MenuState.TaskListMenu;	
+				mc.DisplayTaskListMenu();
+				break;
 
             case "3":
                 //Exit the application

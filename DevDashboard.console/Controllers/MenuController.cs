@@ -86,6 +86,17 @@ namespace DevDashboard.console.Controllers;
 	 * Method to display the task list menu.
 	 */
 	 public void DisplayTaskListMenu() {
+		//Check to see if we got here correctly
+		if(State == MenuState.TaskListMenu) {
+			Console.Clear();
+			Console.WriteLine("Task List Menu:");
 
+			//Display the task list
+			
+		}
+
+		else {
+			return;
+		}
 	 }
  }
